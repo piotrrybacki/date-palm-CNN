@@ -25,3 +25,6 @@ ax.set_title('$k = {}$'.format(k))
 plt.show()
 print('Done.')
 
+Code 2. The code that discretised images of date palm fruit varieties 
+
+

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from skimage.io import imread
 
-date_palm = imread('DN001.jpg')
+date_palm = imread('*.jpg')
 from skimage.transform import downscale_local_mean
 
 factors = 3 ** np.arange(1, 4)

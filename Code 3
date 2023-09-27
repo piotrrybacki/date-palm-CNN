@@ -4,7 +4,6 @@ from skimage.io import imread
 
 date_palm = imread('*.jpg')
 from skimage.transform import downscale_local_mean
-
 factors = 3 ** np.arange(1, 4)
 figure, axis = plt.subplots(1, len(factors), figsize=(10, 6))
 for factor, ax in zip(factors, axis):
@@ -12,7 +11,6 @@ for factor, ax in zip(factors, axis):
                                  factors=(factor, factor, 1)).astype(int)
     ax.imshow(image)
     ax.set_title('$N={}$'.format(image.shape[0]))
-
 factors = 2 ** np.arange(1, 5)
 figure, axis = plt.subplots(1, len(factors), figsize=(20, 6))
 for k, ax in zip(factors, axis):
